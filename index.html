@@ -47,7 +47,7 @@
       zoom: 3,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-    var query = 'select col1, col0, col2 from 1_LTaM52Vmq9LNST2lOaXT_u168Dx6HMO3aSUHFfd limit 10000';
+    var query = 'select col1, col0, col2 from 1_LTaM52Vmq9LNST2lOaXT_u168Dx6HMO3aSUHFfd limit 1000';
     var request = gapi.client.fusiontables.query.sqlGet({ sql: query });
     request.execute(function(response) {
       onDataFetched(response);
